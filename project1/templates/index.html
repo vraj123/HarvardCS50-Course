@@ -3,11 +3,12 @@
 {% block title %}
     Home
 {% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 
 {% block body %}
 <h1 class="text-center"> Welcome </h1>
 <div class="text-center">
-	<form class="form-choose" action="/signup">
+	<form class="form-choose" action="/register">
 		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
 	</form>
 	<form class="form-choose" action="/login">
